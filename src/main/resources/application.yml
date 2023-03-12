@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: connors@sql-server-employees
+    url: jdbc:sqlserver://sql-server-employees.database.windows.net:1433;database=db_employees;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    password: Alfaomega2023
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
