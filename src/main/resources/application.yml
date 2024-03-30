@@ -3,7 +3,7 @@ spring:
     username: connors@sql-server-employees
     url: jdbc:sqlserver://sql-server-employees.database.windows.net:1433;database=db_employees;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
     driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    password: Alfaomega2023
+    password: ${SECRET_PASS}
   jpa:
     properties:
       hibernate:
